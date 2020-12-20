@@ -27,10 +27,7 @@ function html() {
 function styles() {
   return src('src/scss/**/*')
   .pipe(scss({outputStyle: 'compressed' /*'expanded'*/}))
-  .pipe(prefixer({
-    overrideBrowserslist: 'last 5 versions',
-    grid: true
-  }))
+  .pipe(prefixer())
   .pipe(webpcss())
   .pipe(concat('style.min.css'))
   .pipe(dest('dist'))
