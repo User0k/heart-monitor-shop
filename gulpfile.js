@@ -67,7 +67,6 @@ function fonts() {
   .pipe(dest('dist/fonts/'))
 }
 
-
 function clean() {
   return del('dist')
 }
@@ -85,5 +84,5 @@ function serve () {
   watch('src/js/**/*.js', scripts).on('change', sync.reload)
 }
 
-exports.default = parallel(styles, html, scripts, serve);
+exports.default = series(clean, parallel(styles, html, scripts, images, fonts, serve));
 exports.build = series(clean, parallel(styles, html, scripts, images, fonts), _clean);
