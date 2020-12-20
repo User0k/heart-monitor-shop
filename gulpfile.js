@@ -25,7 +25,7 @@ function html() {
 }
 
 function styles() {
-  return src('src/scss/**/*')
+  return src('src/scss/**')
   .pipe(scss({outputStyle: 'compressed' /*'expanded'*/}))
   .pipe(prefixer())
   .pipe(webpcss())
@@ -85,6 +85,5 @@ function serve () {
   watch('src/js/**/*.js', scripts).on('change', sync.reload)
 }
 
-exports.default = series(clean, parallel(styles, html, scripts, serve));
+exports.default = parallel(styles, html, scripts, serve);
 exports.build = series(clean, parallel(styles, html, scripts, images, fonts), _clean);
-exports.html = html;
