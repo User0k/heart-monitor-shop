@@ -1,4 +1,12 @@
+@import 'temp/fonts.scss';
+
+html {
+  font-family: 'Museo Sans', sans-serif;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
 }
+
+@import 'blocks/promo';
