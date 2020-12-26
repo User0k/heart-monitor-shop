@@ -26,7 +26,7 @@ function html() {
 
 function styles() {
   return src('src/scss/**')
-  .pipe(scss({outputStyle: 'compressed' /*'expanded'*/}))
+  .pipe(scss({outputStyle: 'expanded'}))
   .pipe(prefixer())
   .pipe(webpcss())
   .pipe(concat('style.min.css'))
