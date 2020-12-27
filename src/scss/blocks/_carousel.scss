@@ -1,0 +1,25 @@
+.carousel {
+  padding: 81px 0;
+  &__slider {
+    width: 750px;
+    margin: 0 auto;
+    .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    background-color: #fff;
+    border: none;
+    width: 31px;
+    height: 50px;
+    }
+    .slick-prev {
+      background: url('img/icons/left.png') center center / 100% no-repeat;
+      left: -65px;
+    }
+    .slick-next {
+      background: url('img/icons/right.png') center center / 100% no-repeat;
+      right: -65px;
+    }
+  }
+}

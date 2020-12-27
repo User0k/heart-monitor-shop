@@ -1,3 +1,4 @@
+//detects if browser support webp. If so adds class 'webp' to html
 function checkSupport(fn) {
   const html = document.documentElement,
       WebP = new Image();
@@ -13,4 +14,11 @@ function checkSupport(fn) {
   WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
 }
 
-
+//initializates slick slider
+$(document).ready(function(){
+  $('.carousel__slider').slick({
+    speed: 1000,
+    adaptiveHeight: true,
+    variableWidth: true
+  });
+});

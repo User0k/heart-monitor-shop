@@ -34,9 +34,9 @@ function styles() {
 }
 
 function scripts() {
-  return src('src/js/index.js')
-  .pipe(concat('index.min.js'))
-  .pipe(uglify())
+  return src(['src/js/plugins/**', 'src/js/index.js'])
+//  .pipe(concat('index.min.js'))
+//  .pipe(uglify())
   .pipe(dest('dist'))
 }
 
