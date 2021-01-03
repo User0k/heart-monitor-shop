@@ -14,11 +14,25 @@ function checkSupport(fn) {
   WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
 }
 
-//initializates slick slider
 $(document).ready(function(){
   $('.carousel__slider').slick({
     speed: 1000,
     adaptiveHeight: true,
     variableWidth: true
   });
+
+  function toggleItem(item) {
+    $(item).each(function(i) {
+      $(this).click(function(e) {
+        e.preventDefault();
+        $('.face').eq(i).toggleClass('d-none');
+        $('.catalog-item__link-face').eq(i).toggleClass('d-none');
+        $('.back').eq(i).toggleClass('d-none');
+        $('.catalog-item__link-back').eq(i).toggleClass('d-none');
+      })
+    })
+  }
+  
+  toggleItem('.catalog-item__link-face');
+  toggleItem('.catalog-item__link-back');
 });
