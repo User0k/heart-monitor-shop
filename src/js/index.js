@@ -20,7 +20,7 @@ $(document).ready(function(){
     adaptiveHeight: true,
     variableWidth: true
   });
-
+  
   function toggleItem(item) {
     $(item).each(function(i) {
       $(this).click(function(e) {
@@ -32,7 +32,7 @@ $(document).ready(function(){
       })
     })
   }
-  
+
   toggleItem('.catalog-item__link-face');
   toggleItem('.catalog-item__link-back');
 });

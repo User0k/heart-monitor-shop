@@ -39,6 +39,9 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .d-none {
+    display: none;
+  }
   &-item {
     margin: 10px;
     padding: 20px;
@@ -120,8 +123,6 @@
         }
       }
     }
-    .d-none {
-      display: none;
-    }
+
   }
 }
