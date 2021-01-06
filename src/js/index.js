@@ -20,7 +20,12 @@ $(document).ready(function(){
     adaptiveHeight: true,
     variableWidth: true
   });
-  
+
+  $('.catalog__tab').click(function() {
+    $('.catalog__tab').removeClass('catalog__tab-active');
+    $(this).addClass('catalog__tab-active');
+  });
+
   function toggleItem(item) {
     $(item).each(function(i) {
       $(this).click(function(e) {
