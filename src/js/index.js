@@ -24,6 +24,16 @@ $(document).ready(function(){
   $('.catalog__tab').click(function() {
     $('.catalog__tab').removeClass('catalog__tab-active');
     $(this).addClass('catalog__tab-active');
+
+    $('.catalog__content').children().addClass('d-none');
+    if($(this).hasClass('catalog__tab-pectoral')) {
+      $('.pectoral').removeClass('d-none');
+    } else if($(this).hasClass('catalog__tab-fitness')) {
+      $('.fitness').removeClass('d-none');
+    } else if($(this).hasClass('catalog__tab-running')) {
+      $('.running').removeClass('d-none');
+    }
+
   });
 
   function toggleItem(item) {
