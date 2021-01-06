@@ -50,4 +50,5 @@ $(document).ready(function(){
 
   toggleItem('.catalog-item__link-face');
   toggleItem('.catalog-item__link-back');
+  $('.catalog__tab-running').click();
 });
