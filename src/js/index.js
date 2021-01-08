@@ -26,8 +26,8 @@ $(document).ready(function(){
     $(this).addClass('catalog__tab-active');
 
     $('.catalog__content').children().addClass('d-none');
-    if($(this).hasClass('catalog__tab-pectoral')) {
-      $('.pectoral').removeClass('d-none');
+    if($(this).hasClass('catalog__tab-triathlon')) {
+      $('.triathlon').removeClass('d-none');
     } else if($(this).hasClass('catalog__tab-fitness')) {
       $('.fitness').removeClass('d-none');
     } else if($(this).hasClass('catalog__tab-running')) {
