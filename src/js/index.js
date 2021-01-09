@@ -51,4 +51,20 @@ $(document).ready(function(){
   toggleItem('.catalog-item__link-face');
   toggleItem('.catalog-item__link-back');
   $('.catalog__tab-running').click();
+
+  //modal
+  $('[data-modal=consultation]').click(function() {
+    $('.overlay, #consultation').fadeIn('fast');
+  });
+
+  $('.button-card').each(function(i) {
+    $(this).click(function() {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn('fast');
+    });
+  });
+  
+  $('.modal__close').click(function() {
+    $('.overlay, #consultation, #order, #thanks').fadeOut('fast');
+  });
 });
