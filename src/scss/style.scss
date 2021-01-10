@@ -10,6 +10,11 @@ html {
   margin: 0 auto;
 }
 
+.container-catalog {
+  width: 940px;
+  margin: 0 auto;
+}
+
 @import 'temp/buttons';
 @import 'blocks/header';
 @import 'blocks/promo';
@@ -21,3 +26,4 @@ html {
 @import 'blocks/feedback';
 @import 'blocks/footer';
 @import 'temp/modals';
+@import 'temp/media';

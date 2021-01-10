@@ -36,8 +36,8 @@
   &__content {
     margin-top: 55px;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-flow: row wrap;
   }
   .d-none {
     display: none;
