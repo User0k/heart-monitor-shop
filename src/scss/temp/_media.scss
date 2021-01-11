@@ -9,7 +9,11 @@
     width: 820px;
   }
   .consultation {
-    min-height: 630px;
+    min-height: 550px;
+    padding: 90px 0 92px 0;
+  }
+  .consultation__descr {
+    margin-top: 65px;
   }
   .feedback__wrapper {
     margin-left: -10px;
@@ -35,8 +39,8 @@
   .title {
     font-size: 28px;
   }
-  .consultation {
-    min-height: 600px;
+  .consultation .title-left {
+    font-size: 34px;
   }
   .catalog__tab {
     width: 200px;
@@ -64,6 +68,9 @@
   .container {
     width: 780px;
   }
+  .consultation .title-left {
+    font-size: 32px;
+  }
   .container-catalog {
     width: 630px;
   }
@@ -72,13 +79,54 @@
     &__wrapper {
       width: 812px;
     }
+    &__client img {
+      margin-right: -15px;
+    }
+  }
+  .footer__info {
+    padding: 35px 50px 50px 50px;
+    font-size: 19px;
+    &-addr, &-tel {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 884px) {
+  .container {
+    width: 735px;
+  }
+  .header__tel {
+    font-size: 17px;
+  }
+  .promo h1 {
+    font-size: 37px;
+    margin-top: 84px;
+  }
+  .title {
+    font-size: 27px;
+  }
+  .consultation .title-left {
+    font-size: 32px;
+  }
+  .container-catalog {
+    width: 630px;
+  }
+  .feedback {
+    margin-left: 0;
+    &__wrapper {
+      width: 775px;
+    }
+    .feedback__client .client-review__text {
+      font-size: 15px;
+    }
     .feedback__client img {
       margin-right: -15px;
     }
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 810px) {
 
 }
 
