@@ -18,7 +18,16 @@ $(document).ready(function(){
   $('.carousel__slider').slick({
     speed: 1000,
     adaptiveHeight: true,
-    variableWidth: true
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 968,
+        settings: {
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.catalog__tab').click(function() {
@@ -63,7 +72,7 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('fast');
     });
   });
-  
+
   $('.modal__close').click(function() {
     $('.overlay, #consultation, #order, #thanks').fadeOut('fast');
   });
