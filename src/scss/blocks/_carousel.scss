@@ -21,5 +21,25 @@
       background: url('img/icons/right.svg') center center / 100% no-repeat;
       right: -65px;
     }
+    .slick-dots {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      button {
+        font-size: 0;
+        border: none;
+        background: #cfcbc977;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin: 8px;
+        list-style-type: none;
+        outline: none;
+      }
+      li[class="slick-active"] button {
+        background: #d8bbb2;
+      }
+    }
   }
 }

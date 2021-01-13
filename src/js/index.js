@@ -21,7 +21,7 @@ $(document).ready(function(){
     variableWidth: true,
     responsive: [
       {
-        breakpoint: 968,
+        breakpoint: 1024,
         settings: {
           dots: true,
           arrows: false
