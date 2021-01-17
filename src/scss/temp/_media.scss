@@ -2,6 +2,9 @@
   .container {
     width: 860px;
   }
+  .carousel {
+    padding: 55px 0;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -48,10 +51,6 @@
   .consultation .title-left {
     font-size: 34px;
   }
-  .carousel_slider {
-    max-width: 640px;
-    height: 100%;
-  }
   .catalog__tab {
     width: 200px;
   }
@@ -85,6 +84,9 @@
       height: 160px;
       margin-left: 15px;
     }
+  }
+  .carousel {
+    padding-bottom: 20px;
   }
   .footer__info {
     padding: 35px 45px 45px 50px;;
@@ -229,6 +231,9 @@
   .consultation .title-left {
     font-size: 23px;
   }
+  .carousel__slider, .carousel .slick-slide img {
+    max-width: 95vw;
+  }
   .catalog__tabs {
     margin-top: 45px;
   }
@@ -331,6 +336,16 @@
   .button-submit {
     height: 45px;
     font-size: 13px;
+  }
+  .carousel {
+    padding: 30px 0 0 0;
+  }
+  .carousel__slider, .carousel .slick-slide img {
+    max-width: 100vw;
+  }
+  .carousel__slider .slick-dots button {
+    width: 10px;
+    height: 10px;
   }
   .container-catalog {
     width: 478px;

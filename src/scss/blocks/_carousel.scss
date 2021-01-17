@@ -1,7 +1,10 @@
 .carousel {
   padding: 81px 0;
+  .slick-slide img {
+    max-width: 750px;
+  }
   &__slider {
-    width: 750px;
+    max-width: 750px;
     margin: 0 auto;
     .slick-arrow {
     position: absolute;
@@ -26,6 +29,7 @@
       display: flex;
       justify-content: center;
       list-style-type: none;
+      margin-top: 10px;
       button {
         font-size: 0;
         border: none;
