@@ -1,6 +1,10 @@
 .footer {
+  width: 100vw;
   height: 630px;
   position: relative;
+  iframe {
+    border:none;
+  }
   &__info {
     position: absolute;
     top: 0;
@@ -35,7 +39,7 @@
       border: 2px solid #fff;
       border-radius: 50%;
       margin: 0 15px;
-      
+
       img {
         height: 27px;
       }

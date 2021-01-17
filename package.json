@@ -33,5 +33,6 @@
     "last 5 versions",
     "> 1%",
     "maintained node versions"
-  ]
+  ],
+  "dependencies": {}
 }
