@@ -94,6 +94,9 @@
 }
 
 @media (max-width: 895px) {
+  .promo {
+    padding-bottom: 40px;
+  }
   .header-logo {
     width: 194px;
     height: 100%;
@@ -246,6 +249,9 @@
   .catalog__content {
     margin-top: 35px;
   }
+  .catalog-item__specs li {
+    padding: 0 0 14px 19px;
+  }
   .feedback__wrapper {
     margin-left: 0;
   }
@@ -267,7 +273,7 @@
       }
     }
     &__tel {
-      font-size: 11px;
+      font-size: 12px;
     }
   }
   .button-call {
@@ -296,20 +302,20 @@
     margin-top: 45px;
   }
   .title {
-    font-size: 23px;
+    font-size: 21px;
   }
   .advantages {
-    padding: 20px 0 35px 0;
+    padding: 15px 0 30px 0;
     &__icon img {
       margin-top: 22px;
       height: 60px;
     }
     &__icon {
-      font-size: 11px;
+      font-size: 12px;
     }
     &__icon span {
       font-size: 15px;
-      margin: 20px 0 17px 0;
+      margin: 10px 0 17px 0;
     }
   }
   .consultation {
@@ -345,7 +351,7 @@
   }
   .carousel__slider .slick-dots button {
     width: 10px;
-    height: 10px;
+    height: 12px;
   }
   .container-catalog {
     width: 478px;
@@ -367,6 +373,9 @@
     font-size: 14px;
     line-height: 41px;
     margin: 0 3px;
+    &:hover {
+      box-shadow: none;
+    }
   }
   .catalog__tab:first-child {
     position: absolute;
@@ -434,7 +443,7 @@
     display: none;
   }
   .promo {
-    padding-bottom: 22px;
+    padding-bottom: 30px;
     h1 {
       font-size: 22px;
     }
