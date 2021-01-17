@@ -18,6 +18,9 @@
   .feedback__wrapper {
     margin-left: -10px;
   }
+  .footer__info {
+    padding: 40px 55px 55px 55px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -84,7 +87,7 @@
     }
   }
   .footer__info {
-    padding: 40px 55px 55px 55px;
+    padding: 35px 45px 45px 50px;;
   }
 }
 
@@ -178,11 +181,14 @@
     }
   }
   .footer__info {
-    padding: 35px 50px 50px 50px;
-    font-size: 19px;
+    font-size: 17px;
     &-addr, &-tel {
       margin-bottom: 32px;
     }
+  }
+  .footer__socials-item {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -240,7 +246,8 @@
   }
   .feedback__client .client-review__name {
       font-size: 17px;
-    }
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -387,6 +394,20 @@
       }
     }
   }
+  .footer__info {
+    padding: 20px 30px 30px 30px;
+    font-size: 14px;
+  }
+  .footer__socials-item {
+    width: 35px;
+    height: 35px;
+    img {
+      height: 20px;
+    }
+  }
+  .footer__info-addr, .footer__info-tel {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -429,7 +450,7 @@
     left: 40%;
   }
   .feedback .feedback__client .client-review__text {
-    font-size: 13px;
+    font-size: 14px;
   }
   .feedback__client  {
     .client-review {
@@ -443,6 +464,13 @@
       width: 120px;
       height: 120px;
     }
+  }
+  .footer__info {
+    max-width: 100vw;
+    padding: 15px 15px 22px 15px;
+  }
+  .footer__info-addr, .footer__info-tel {
+    margin-bottom: 15px;
   }
 }
 
