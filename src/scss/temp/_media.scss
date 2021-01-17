@@ -61,7 +61,7 @@
         margin-top: 10px;
       }
       a {
-        margin-top: 0;
+        margin-top: 5px;
       }
       img {
         height: 185px;
@@ -153,7 +153,16 @@
     margin-top: 0;
   }
   .container-catalog {
-    width: 630px;
+    width: 620px;
+  }
+  .catalog__tabs {
+    margin-top: 53px;
+  }
+  .catalog__tab {
+    font-size: 17px;
+  }
+  .catalog__content {
+    margin-top: 45px;
   }
   .feedback {
     margin-left: 0;
@@ -213,6 +222,18 @@
   .consultation .title-left {
     font-size: 23px;
   }
+  .catalog__tabs {
+    margin-top: 45px;
+  }
+  .catalog__tab {
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 45px;
+  }
+  .catalog__content {
+    margin-top: 35px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -258,6 +279,7 @@
   }
   .title {
     font-size: 23px;
+    margin-bottom: 60px;
   }
   .advantages {
     padding: 20px 0 35px 0;
@@ -298,6 +320,40 @@
     height: 45px;
     font-size: 13px;
   }
+  .container-catalog {
+    width: 478px;
+  }
+  .catalog__content {
+    justify-content: center;
+  }
+  .catalog__tabs {
+    margin-top: 30px;
+    flex-direction: column;
+    position: relative;
+  }
+  .catalog__tab {
+    width: 142px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 41px;
+    margin: 0 3px;
+  }
+  .catalog__tab:first-child {
+    position: absolute;
+    bottom: 105%;
+    right: 50%;
+
+  }
+  .catalog__tab:last-child {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+  }
+
+  .catalog__content {
+    margin-top: 70px;
+  }
+
 }
 
 @media (max-width: 479px) {
@@ -319,22 +375,25 @@
       font-size: 11px;
     }
   }
-  .advantages {
-    padding: 13px 0 20px 0;
-  }
   .advantages__icons {
     flex-wrap: wrap;
     justify-content: center;
   }
   .advantages__icon {
     flex-basis: 310px;
-    span {
-      margin: 10px 0 14px 0;
-    }
     img {
       margin-top: 13px;
-      height: 55px;
     }
+  }
+  .container-catalog {
+    width: 319px;
+  }
+  .catalog__tab:first-child {
+    right: 40%;
+
+  }
+  .catalog__tab:last-child {
+    left: 40%;
   }
 }
 
