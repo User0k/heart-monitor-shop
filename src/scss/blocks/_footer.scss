@@ -2,8 +2,10 @@
   width: 100vw;
   height: 630px;
   position: relative;
-  iframe {
-    border:none;
+  .footer__map {
+    border: none;
+    width: 100vw;
+    height: 630px;
   }
   &__info {
     position: absolute;
