@@ -95,11 +95,11 @@
 
 @media (max-width: 895px) {
   .promo {
+    background: url('img/background/bg-main-mob.jpg') center (center/cover) no-repeat;
     padding-bottom: 40px;
   }
   .header-logo {
-    width: 194px;
-    height: 100%;
+    width: 110px;
   }
   .header__tel {
     font-size: 15px;
@@ -138,6 +138,7 @@
     }
   }
   .consultation {
+    background: url('img/background/bg-consultation-mob.jpg') center (center/cover) no-repeat;
     min-height: 414px;
     padding: 30px 0 25px 0;
   }
@@ -198,10 +199,6 @@
 }
 
 @media (max-width: 767px) {
-  .header-logo {
-    width: 194px;
-    height: 100%;
-  }
   .header__tel {
     font-size: 15px;
   }
@@ -263,8 +260,7 @@
 @media (max-width: 640px) {
   .header {
     &-logo {
-      width: 140px;
-      height: 100%;
+      width: 100px;
     }
     &__official {
       font-size: 10px;
