@@ -76,4 +76,20 @@ $(document).ready(function(){
   $('.modal__close').click(function() {
     $('.overlay, #consultation, #order, #thanks').fadeOut('fast');
   });
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('fast');
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
 });
