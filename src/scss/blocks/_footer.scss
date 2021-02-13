@@ -1,9 +1,11 @@
 .footer {
   width: 100vw;
-  height: 630px;
+  height: 700px;
   position: relative;
-  iframe {
-    border:none;
+  .footer__map {
+    border: none;
+    width: 100vw;
+    height: 700px;
   }
   &__info {
     position: absolute;
@@ -30,6 +32,11 @@
   &__socials {
     display: flex;
     justify-content: center;
+    :hover {
+      background-color: rgba(0, 0, 0, .1);
+      transition-property: background-color;
+      transition-duration: .3s;
+    }
     &-item {
       display: flex;
       justify-content: center;
@@ -39,7 +46,9 @@
       border: 2px solid #fff;
       border-radius: 50%;
       margin: 0 15px;
-
+      :hover {
+        background-color: rgba(0, 0, 0, 0);
+      }
       img {
         height: 27px;
       }

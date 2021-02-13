@@ -95,11 +95,11 @@
 
 @media (max-width: 895px) {
   .promo {
+    background: url('img/background/bg-main-mob.jpg') center (center/cover) no-repeat;
     padding-bottom: 40px;
   }
   .header-logo {
-    width: 194px;
-    height: 100%;
+    width: 110px;
   }
   .header__tel {
     font-size: 15px;
@@ -138,6 +138,7 @@
     }
   }
   .consultation {
+    background: url('img/background/bg-consultation-mob.jpg') center (center/cover) no-repeat;
     min-height: 414px;
     padding: 30px 0 25px 0;
   }
@@ -198,10 +199,6 @@
 }
 
 @media (max-width: 767px) {
-  .header-logo {
-    width: 194px;
-    height: 100%;
-  }
   .header__tel {
     font-size: 15px;
   }
@@ -258,13 +255,18 @@
   .feedback__client .client-review__name {
       font-size: 17px;
   }
+  .overlay .modal__subtitle {
+    font-size: 16px;
+  }
+  .overlay .modal__descr {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 640px) {
   .header {
     &-logo {
-      width: 140px;
-      height: 100%;
+      width: 100px;
     }
     &__official {
       font-size: 10px;
@@ -387,8 +389,49 @@
     top: 110%;
     left: 50%;
   }
-  .catalog__content {
-    margin-top: 70px;
+  .catalog {
+    &__content {
+      margin-top: 70px;
+    }
+    &-item {
+      min-height: 257px;
+      padding: 5px 12px 10px 12px;
+      margin: 10px;
+      width: 190px;
+      &__wrapper {
+        min-height: 214px;
+      }
+      &__subtitle, &__descr {
+        margin-top: 7px;
+      }
+      &__subtitle {
+        font-size: 14px;
+      }
+      &__descr {
+        font-size: 11px;
+      }
+      img {
+        height: 150px;
+      }
+      a {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      hr {
+        display: none;
+      }
+      &__old-price {
+        font-size: 12px;
+      }
+      &__new-price {
+        font-size: 15px;
+      }
+    }
+  }
+  .button-card {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
   }
   .feedback .feedback__client .client-review__text {
     font-size: 14px;
@@ -432,6 +475,9 @@
   }
   .footer__info-addr, .footer__info-tel {
     margin-bottom: 20px;
+  }
+  .overlay .modal {
+    padding: 24px;
   }
 }
 
@@ -500,6 +546,9 @@
   .footer__info-addr, .footer__info-tel {
     margin-bottom: 15px;
   }
+  .overlay .modal__close {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -509,5 +558,8 @@
   }
   .feedback__client .client-review {
     padding-bottom: 30px;
+  }
+  .overlay .modal__close {
+    right: -8px;
   }
 }
